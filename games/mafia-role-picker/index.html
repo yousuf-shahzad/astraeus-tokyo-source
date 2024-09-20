@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mafia Game Role Picker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Mafia Game Role Picker</h1>
+        <form id="gameForm">
+            <label for="players">Number of players:</label>
+            <input type="number" id="players" required min="1">
+            
+            <label for="mafia">Number of Mafia:</label>
+            <input type="number" id="mafia" required min="0">
+            
+            <label for="sheriff">Number of Sheriffs:</label>
+            <input type="number" id="sheriff" required min="0">
+            
+            <label for="doctor">Number of Doctors:</label>
+            <input type="number" id="doctor" required min="0">
+            
+            <button type="submit">Start Game</button>
+        </form>
+        <div id="playerNumber"></div>
+        <div id="roleDisplay"></div>
+        <button id="nextButton">Next Player</button>
+        <button id="restartButton" style="display: none;">Restart Game</button>
+    </div>
+    <div class="attribution">Made by Yousuf Shahzad &copy; 2024</div>
+    <script src="script.js"></script>
+</body>
+</html>

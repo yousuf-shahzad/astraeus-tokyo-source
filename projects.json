@@ -1,0 +1,9 @@
+{
+    "projects": [
+        {
+            "title": "mafia game role picker",
+            "description": "web based tool used for picking roles in popular game mafia - made this on a whim, and thought it would be nice to share.",
+            "link": "/games/mafia-role-picker/index.html"
+        }
+    ]
+}
