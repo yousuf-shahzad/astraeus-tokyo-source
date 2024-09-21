@@ -3,6 +3,7 @@ const roleDisplay = document.getElementById('roleDisplay');
 const playerNumberDisplay = document.getElementById('playerNumber');
 const nextButton = document.getElementById('nextButton');
 const restartButton = document.getElementById('restartButton');
+const acknowledgeButton = document.getElementById('acknowledgeButton')
 let roles = [];
 let currentPlayer = 0;
 let totalPlayers = 0;
@@ -10,6 +11,7 @@ let totalPlayers = 0;
 gameForm.addEventListener('submit', startGame);
 nextButton.addEventListener('click', displayNextRole);
 restartButton.addEventListener('click', restartGame);
+acknowledgeButton.addEventListener('click', clearCurrentRole)
 
 function startGame(e) {
     e.preventDefault();
@@ -44,6 +46,7 @@ function startGame(e) {
 
     gameForm.style.display = 'none';
     nextButton.style.display = 'block';
+    acknowledgeButton.style.display = 'block';
     currentPlayer = 1;
     displayNextRole();
 }
@@ -59,6 +62,7 @@ function displayNextRole() {
         playerNumberDisplay.textContent = "";
         roleDisplay.textContent = "All roles have been assigned!";
         nextButton.style.display = 'none';
+        acknowledgeButton.style.display = 'none';
         restartButton.style.display = 'block';
     }
 }
@@ -72,4 +76,8 @@ function restartGame() {
     roles = [];
     currentPlayer = 0;
     totalPlayers = 0;
+}
+
+function clearCurrentRole() {
+    roleDisplay.textContent = 'Click to see your role.'
 }

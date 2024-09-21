@@ -3,23 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://rsms.me/">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
     <title>Mafia Game Role Picker</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <h1>Mafia Game Role Picker</h1>
+        <h1>mafia game role picker</h1>
         <form id="gameForm">
-            <label for="players">Number of players:</label>
+            <label for="players">number of players:</label>
             <input type="number" id="players" required min="1">
             
-            <label for="mafia">Number of Mafia:</label>
+            <label for="mafia">number of mafia:</label>
             <input type="number" id="mafia" required min="0">
             
-            <label for="sheriff">Number of Sheriffs:</label>
+            <label for="sheriff">number of sheriffs:</label>
             <input type="number" id="sheriff" required min="0">
             
-            <label for="doctor">Number of Doctors:</label>
+            <label for="doctor">number of doctors:</label>
             <input type="number" id="doctor" required min="0">
             
             <button type="submit">Start Game</button>
@@ -27,9 +29,10 @@
         <div id="playerNumber"></div>
         <div id="roleDisplay"></div>
         <button id="nextButton">Next Player</button>
+        <button id="acknowledgeButton">Click here to clear for the next person.</button>
         <button id="restartButton" style="display: none;">Restart Game</button>
     </div>
-    <div class="attribution">Made by Yousuf Shahzad &copy; 2024</div>
+    <div class="attribution">made by yousuf shahzad &copy; 2024</div>
     <script src="script.js"></script>
 </body>
 </html>
