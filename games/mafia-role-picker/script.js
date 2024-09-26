@@ -79,5 +79,5 @@ function restartGame() {
 }
 
 function clearCurrentRole() {
-    roleDisplay.textContent = 'Click to see your role.'
+    roleDisplay.textContent = 'Hand the device over to the next player, who should click next player to see their role.'
 }
