@@ -2,8 +2,15 @@
     "projects": [
         {
             "title": "mafia game role picker",
-            "description": "web based tool used for picking roles in popular game mafia - made this on a whim, and thought it would be nice to share.",
-            "link": "/games/mafia-role-picker/"
+            "description": "web based tool used for picking roles in popular game mafia - an experiment in testing javascript randomisation and arrays.",
+            "link": "/games/mafia-role-picker/",
+            "source": ""
+        },
+        {
+            "title": "bell curve generator",
+            "description": "python based bell curve generator i made with a friend which i converted to a working javascript web version using plotly - an experiment using mathematics and statistics.",
+            "link": "/experiments/bell_curve_generator/index.html",
+            "source": "https://github.com/sudhakara-ambati/bell-curve-generator"
         }
     ]
 }

@@ -31,9 +31,14 @@ function createProjectCard(project) {
     link.href = project.link;
     link.textContent = 'explore.';
 
+    const source = document.createElement('a');
+    source.href = project.source;
+    source.textContent = 'source.'
+
     card.appendChild(title);
     card.appendChild(description);
     card.appendChild(link);
+    card.appendChild(source);
 
     return card;
 }
