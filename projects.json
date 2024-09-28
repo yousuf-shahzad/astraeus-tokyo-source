@@ -10,7 +10,7 @@
             "title": "bell curve generator",
             "description": "python based bell curve generator i made with a friend which i converted to a working javascript web version using plotly - an experiment using mathematics and statistics.",
             "link": "/experiments/bell_curve_generator/index.html",
-            "source": "https://github.com/sudhakara-ambati/bell-curve-generator"
+            "source": "https://github.com/yousuf-shahzad/bell-curve-generator"
         }
     ]
 }
